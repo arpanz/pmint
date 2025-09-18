@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-gradient-start: #1E3A8A;
+  --primary-start: #1e3a8a;
+  --primary-gradient-end: #3B82F6;
+  --primary-end: #3b82f6;
+  --background-primary: #F9FAFB;
+  --background-secondary: #FFFFFF;
+  --text-primary: #111827;
+  --text-secondary: #6B7280;
+  --accent-light: #E0F2FE;
+  --neutral-subtle: #F3F4F6;
+  --neutral-border: #f3f4f6;
+  --neutral-medium: #9CA3AF;
+  --neutral-text: #9ca3af;
+  --neutral-bg: #f9fafb;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-primary);
+}
+
+.gradient-text {
+  background: linear-gradient(to right, var(--primary-gradient-start), var(--primary-gradient-end));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
